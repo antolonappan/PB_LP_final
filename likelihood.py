@@ -1,6 +1,10 @@
 import numpy as np
 import numpy.linalg as la
-from block_diagonal_algebra import inv
+
+
+def inv(m):
+    result = np.array(map(np.linalg.inv, m.reshape((-1,)+m.shape[-2:])))
+    return result.reshape(m.shape)
 
 INV_MAX_COND_NUM = 1e-8
 

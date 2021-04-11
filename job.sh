@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --qos=regular
+#SBATCH --qos=debug
 #SBATCH --constraint=haswell
 #SBATCH --ntasks=96
 #SBATCH --cpus-per-task=1
@@ -13,6 +13,8 @@
 
 
 source /global/homes/l/lonappan/.bashrc
+conda activate PB_LP
+
 module load cray-hdf5-parallel
 export HDF5_USE_FILE_LOCKING=FALSE
 

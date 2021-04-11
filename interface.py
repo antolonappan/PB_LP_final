@@ -204,7 +204,7 @@ def run(tag, pb_factor=None):
     ' --dof ' + dof_file +
     ' --fit_for ' + fit_for +
     ' --param0 ' + param0 +
-    ' --mc_n_step 200000'
+    ' --mc_n_step 500000'
     ' --overwrite '
     #' --test '  #XXX
     #' --show '
